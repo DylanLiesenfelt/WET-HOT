@@ -161,3 +161,63 @@ main {
                 font-size: calc(0.7vh + 0.7vw);
                 font-weight: bolder;
             }
+
+#skill-count {
+    margin-right: 5%;
+    background-color: white;
+    height: 50%;
+    aspect-ratio: 1/1;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border: 3px solid black;
+    font-size: calc(0.7vh + 0.7vw);
+}
+
+#skills {
+    height: 96%;
+    width: 90%;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+    .skill-badge {
+        width: 50%;
+        height: 7%;
+    }
+
+        .skill-icon {
+            outline: 1px solid white;
+            height: 60%;
+            aspect-ratio: 1/1;
+            margin-right: 3%;
+        }
+
+        .skill-badge > h3 {
+            height: 90%;
+            width: 50%;
+            display: flex;
+            align-items: center;
+            font-size: calc(1vh + 0.5vw);
+        }
+
+        .skill-val {
+            width: 12%;
+            aspect-ratio: 1/1;
+            background-color: white;
+            border: 3px solid black;
+        }
+
+        .skill-select {
+            border: 3px solid black;
+            background-color: rgba(0, 0, 0, 0.5);
+            margin-left: 5%;
+            height: 30%;
+            aspect-ratio: 1/1;
+            border-radius: 50%;
+        }
+
+        .skill-select:hover {
+            background-color: rgba(255, 255, 255, 0.5);
+        }

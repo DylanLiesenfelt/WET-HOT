@@ -39,6 +39,8 @@ function increment_attribute(attribute) {
     }
 }
 
+update_attribute_values() //Init value update on page load
+
 //Inverse
 function decrement_attribute(attribute) {
     switch(attribute) {
@@ -53,36 +55,37 @@ function decrement_attribute(attribute) {
 
 //Skills
 //Swole
-let athletics = Math.ceil(swole * (hustle/2))
-let mma = Math.ceil(swole * ((hustle * vibes * smarts)/4))
-let intimidation = Math.ceil(swole * (rizz/2))
-let laborer = Math.ceil(swole * (hustle/2))
+let athletics = Math.ceil(swole * ((science + cooking) / 3))
+let intimidation = Math.ceil(swole * ((performer + lying + mma) / 4))
+let mma = Math.ceil(swole * ((insight + performer + math + athletics) / 5))
+let laborer = Math.ceil(swole * ((handiness + barter) / 3))
+let explosives = Math.ceil(swole * ((science + math + tech) / 4))
 
 //Hustle
-let finances = Math.ceil(hustle * (smarts/2))
-let gambling = Math.ceil(hustle * (smarts * (rizz * vibes)/3)/2)
-let handiness = Math.ceil(hustle * (smarts * (swole/2)/2))
-let shadiness = Math.ceil(hustle * (vibes/2))
-let insight = Math.ceil( hustle * ((smarts)* (vibes))/3)
+let finance = Math.ceil(hustle * ((math + barter + history + tech) / 5))
+let gambling = Math.ceil(hustle * ((math + science + finance + insight) / 5))
+let handiness = Math.ceil(hustle * ((athletics + performer) / 3))
+let insight = Math.ceil(hustle * ((nature + seduction + history) / 4))
+let shadiness = Math.ceil(hustle * ((survival + handiness + insight + athletics) / 5))
 
 //Vibes
-let art = Math.ceil(vibes * (smarts / hustle)/4)
-let music = Math.ceil(vibes * (smarts / hustle)/4)
-let nature = Math.ceil(vibes * (smarts / swole)/4)
-let cooking = Math.ceil(vibes * (smarts / hustle)/3)
+let art = Math.ceil(vibes * ((handiness + nature + history) / 4))
+let cooking = Math.ceil(vibes * ((nature + handiness + science) / 4))
+let music = Math.ceil(vibes * ((math + handiness + history + art) / 5))
+let nature = Math.ceil(vibes * ((science + medicine + athletics) / 4))
+let survival = Math.ceil(vibes * ((nature + athletics) / 3))
 
 //Rizz
-let barter = Math.ceil(rizz * (hustle/2))
-let comedy = Math.ceil(rizz * (rizz * vibes * hustle * smarts)/5)
-let lying = Math.ceil(rizz * (smarts * hustle)/3)
-let performer = Math.ceil(rizz * (rizz * vibes * swole)/4)
-let seduction = Math.ceil(rizz * ((rizz * swole * vibes * smarts) * swole)/5)
+let barter = Math.ceil(rizz * ((lying + intimidation + insight + shadiness + history) / 6))
+let comedy = Math.ceil(rizz * ((performer + art + insight) / 4))
+let lying = Math.ceil(rizz * ((performer + insight) / 3))
+let performer = Math.ceil(rizz * ((art + music + athletics) / 4))
+let seduction = Math.ceil(rizz * ((athletics + shadiness + nature + science) / 5))
 
 //Smarts
-let science = Math.ceil(smarts * smarts)
-let tech = Math.ceil(smarts * (smarts * hustle)/2)
-let history = Math.ceil(smarts * (rizz * swole)/3)
-let medicine = Math.ceil(smarts * (smarts * (vibes * rizz))/4)
-let math = Math.ceil(smarts * smarts)
+let history = Math.ceil(smarts * ((science + insight + tech) / 3))
+let math = Math.ceil(smarts * ((science + tech + history) / 3))
+let medicine = Math.ceil(smarts * ((science + tech + math) / 3))
+let science = Math.ceil(((smarts * smarts) + (math)) / 4)
+let tech = Math.ceil(smarts * ((science + math + insight) / 4))
 
-update_attribute_values() //Init value update on page load
