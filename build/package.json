@@ -1,0 +1,15 @@
+{
+  "name": "wet-hot",
+  "version": "0.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "test",
+    "start": "electron ."
+  },
+  "author": "Dylan Liesenfelt",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "electron": "^32.1.0"
+  }
+}
