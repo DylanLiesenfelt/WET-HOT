@@ -3,7 +3,7 @@
 ## Road Map
 ### 0.0.1: UI
 - Build intro screen
-- Build character creation screen
+- Build character creation screen < ====
 - Build initial game scene
 - Add functionality to all screens
 

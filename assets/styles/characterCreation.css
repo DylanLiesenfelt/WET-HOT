@@ -1,0 +1,163 @@
+body {
+    background: linear-gradient(217deg, #03b3ff, rgba(255,0,0,0) 50%),
+                linear-gradient(127deg, #ffd503, rgba(0,255,0,0) 50%),
+                linear-gradient(336deg, #ff035b, rgba(0,0,255,0) 50%);
+}
+
+main {
+    height: 100%;
+    flex-direction: row;
+}
+
+#attributes-cont, #skills-cont {
+    width: 30%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    flex-direction: column;
+}
+
+#character-cont {
+    width: 40%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+    #char-display-cont {
+        background-color: rgba(0, 0, 0, 0.5);
+        height: 60%;
+        width: 70%;
+    }
+
+        #char-display {
+            background-color: white;
+            height: 90%;
+            width: 90%;
+        }
+
+    #char-ctrl-cont {
+        height: 20%;
+        flex-direction: column;
+    }
+
+        #char-name {
+            width: 50%;
+            aspect-ratio: 4/0.5;
+            border: 3px solid black;
+            margin-bottom: 5%;
+        }
+
+        #continue-btn {
+            width: 30%;
+            aspect-ratio: 4/1;
+            font-size: calc(1vh + 0.5vw);
+            font-weight: bold;
+            color: white;
+            border: 3px solid black;
+            background-color: #03b3ff;
+            transition-duration: 100ms;
+        }
+
+        #continue-btn:hover {
+            font-size: calc(1vh + 0.7vw);
+        }
+
+        #continue-btn:active {
+            background-image: linear-gradient(to bottom,#03b3ff, rgb(100, 200, 250) 50%, #03b3ff);
+            box-shadow:inset 0 0 10px 5px rgba(0, 0, 0, 0.5);
+            font-size: calc(1vh + 0.5vw);
+            color: black;
+        }
+
+#attributes {
+    height: 96%;
+    width: 90%;
+    flex-direction: column;
+}
+    #att-header {
+        height: 7%;
+        background-color: rgba(0, 0, 0, 0.5);
+        justify-content: space-between;
+    }
+
+        #att-header > h2 {
+            font-size: calc(1vh + 1vw);
+            margin-left: 5%;
+        }
+
+        #att-count {
+            margin-right: 5%;
+            background-color: white;
+            height: 50%;
+            aspect-ratio: 1/1;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            border: 3px solid black;
+            font-size: calc(0.7vh + 0.7vw);
+        }
+
+    .att {
+        height: 18%;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+        .att-icon {
+            outline: 1px solid white;
+            height: 60%;
+            aspect-ratio: 1/1;
+        }
+
+        .att > h3 {
+            width: 33%;
+            height: 40%;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            font-size: calc(1vh + 1.5vw);
+        }
+
+        .value-cont {
+            height: 50%;
+            width: 30%;
+        }
+
+            .value-cont > button {
+                height: 40%;
+                aspect-ratio: 1/1;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: rgba(0, 0, 0, 0.5);
+                border: none;
+                color: #03b3ff;
+                font-weight: bolder;
+                transition-duration: 100ms;
+                font-size: 1.5rem;
+            }
+
+            .value-cont > button:hover {
+                background-color: #03b3ff7b;
+                color: #ff035b;
+            }
+
+            .value-cont > button:active {
+                color: #ffd503;
+                background-color: #ff035b80;
+                font-size: 2rem;
+            }
+
+            .att-val {
+                background-color: white;
+                height: 50%;
+                aspect-ratio: 1/1;
+                align-items: center;
+                justify-content: center;
+                display: flex;
+                border: 3px solid black;
+                margin-left: 7%;
+                margin-right: 7%;
+                font-size: calc(0.7vh + 0.7vw);
+                font-weight: bolder;
+            }

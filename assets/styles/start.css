@@ -5,6 +5,7 @@ body {
 }
 
 main {
+    flex-direction: column;
     height: 90%;
 }
 
