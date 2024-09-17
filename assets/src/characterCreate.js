@@ -64,7 +64,9 @@ const Smarts = new Attribute(
 )
 
 function calc_skill_value(main, mod, mod_val) {
-    return main * (mod * mod_val)
+    calc = Math.ceil(main * (mod * mod_val))
+    console.log(calc)
+    return calc
 }
 
 class Skill {
@@ -77,7 +79,6 @@ class Skill {
         this.val_id.textContent = this.value
     }
 }
-
 
 
 const Athletics = new Skill(
