@@ -183,10 +183,13 @@ main {
 }
 
     .skill-badge {
-        width: 50%;
+        width: 47%;
         height: 7%;
     }
 
+    .skill-badge:nth-child(even) {
+        margin-left: 5%;
+    }
         .skill-icon {
             outline: 1px solid white;
             height: 60%;
@@ -199,7 +202,8 @@ main {
             width: 50%;
             display: flex;
             align-items: center;
-            font-size: calc(1vh + 0.5vw);
+            font-size: calc(0.5vh + 0.5vw);
+            font-weight: bolder;
         }
 
         .skill-val {
