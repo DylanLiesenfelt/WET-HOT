@@ -108,7 +108,6 @@ main {
     }
 
         .att-icon {
-            outline: 1px solid white;
             height: 60%;
             aspect-ratio: 1/1;
         }
@@ -195,7 +194,6 @@ main {
         margin-left: 5%;
     }
         .skill-icon {
-            outline: 1px solid white;
             height: 60%;
             aspect-ratio: 1/1;
             margin-right: 3%;
