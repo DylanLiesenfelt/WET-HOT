@@ -10,227 +10,31 @@
 </head>
 <body>
     <main class="container">
-        <div id="attributes-cont" class="container">
-            <div id="att-header" class="container">
-                <h2>ATTRIBUTES</h2>
-                <div id="att-count"></div>
-            </div>
-            <div id="attributes" class="container">
-                <div class="att container">
-                    <img src="../images/icons/Attribute-Icons/swole.png" alt="" class="att-icon">
-                    <h3>SWOLE</h3>
-                    <div class="value-cont container">
-                        <button id='swole-'>-</button>
-                        <div id="swole-val" class="att-val"></div>
-                        <button id='swole+'>+</button>
-                    </div>
-                </div>
-                <div class="att container">
-                    <img src="../images/icons/Attribute-Icons/hustle.png" alt="" class="att-icon">
-                    <h3>HUSTLE</h3>
-                    <div class="value-cont container">
-                        <button id='hustle-'>-</button>
-                        <div id="hustle-val" class="att-val"></div>
-                        <button id='hustle+'>+</button>
-                    </div>
-                </div>
-                <div class="att container">
-                    <img src="../images/icons/Attribute-Icons/vibes.png" alt="" class="att-icon">
-                    <h3>VIBES</h3>
-                    <div class="value-cont container">
-                        <button id='vibes-'>-</button>
-                        <div id="vibes-val" class="att-val"></div>
-                        <button id='vibes+'>+</button>
-                    </div>
-                </div>
-                <div class="att container">
-                    <img src="../images/icons/Attribute-Icons/rizz.png" alt="" class="att-icon">
-                    <h3>RIZZ</h3>
-                    <div class="value-cont container">
-                        <button id='rizz-'>-</button>
-                        <div id="rizz-val" class="att-val"></div>
-                        <button id='rizz+'>+</button>
-                    </div>
-                </div>
-                <div class="att container">
-                    <img src="../images/icons/Attribute-Icons/smarts.png" alt="" class="att-icon">
-                    <h3>SMARTS</h3>
-                    <div class="value-cont container">
-                        <button id='smarts-'>-</button>
-                        <div id="smarts-val" class="att-val"></div>
-                        <button id='smarts+'>+</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="character-cont" class="container">
-            <div id="char-display-cont" class="container">
-                <div id="char-display" class="container">
+        <div id="att-skill-contain" class="container">
+            <div id="att-contain" class="container">
+                <header>
+                    <h2>ATTRIBUTES</h2>
+                    <div id="att-count"></div>
+                </header>
+                <div id="att-cont" class="container">
 
                 </div>
             </div>
-            <div id="char-ctrl-cont" class="container">
-                <input id="char-name" type="text" placeholder="Character Name">
-                <button id="continue-btn">CONTINUE</button>
+            <div id="skill-contain" class="container">
+                <header>
+                    <h2>SKILLS</h2>
+                    <div id="skill-count"></div>
+                </header>
+                <div id="skill-cont" class="container">
+
+                </div>
             </div>
         </div>
-        <div id="skills-cont" class="container">
-            <div id="att-header" class="container">
-                <h2>SKILLS</h2>
-                <div id="skill-count">0</div>
-            </div>
-            <div id="skills" class="container">
-                <div class="skill-badge container">
-                    <img src="../images/icons/Skills Icons/athletics.png" alt="" class="skill-icon">
-                    <h3>ATHLETICS</h3>
-                    <div id="athletics-val" class="skill-val container"></div>
-                    <button id="athletics-sel" class="skill-select"></button>
-                </div>
-                <div class="skill-badge container">
-                    <img src="../images/icons/Skills Icons/intimidation.png" alt="" class="skill-icon">
-                    <h3>INTIMIDATION</h3>
-                    <div id="intimidation-val" class="skill-val container"></div>
-                    <button id="intimidation-sel" class="skill-select"></button>
-                </div>
-                <div class="skill-badge container">
-                    <img src="../images/icons/Skills Icons/mma.png" alt="" class="skill-icon">
-                    <h3>MMA</h3>
-                    <div id="mma-val" class="skill-val container"></div>
-                    <button id="athletics-sel" class="skill-select"></button>
-                </div>
-                <div class="skill-badge container">
-                    <img src="../images/icons/Skills Icons/labor.png" alt="" class="skill-icon">
-                    <h3>LABOR</h3>
-                    <div id="labor-val" id="-val" class="skill-val container"></div>
-                    <button id="athletics-sel" class="skill-select"></button>
-                </div>
-                <div class="skill-badge container">
-                    <img src="../images/icons/Skills Icons/explosives.png" alt="" class="skill-icon">
-                    <h3>EXPLOSIVES</h3>
-                    <div id="explosives-val" class="skill-val container"></div>
-                    <button id="athletics-sel" class="skill-select"></button>
-                </div>
-                <div class="skill-badge container">
-                    <img src="../images/icons/Skills Icons/finances.png" alt="" class="skill-icon">
-                    <h3>FINANCE</h3>
-                    <div id="finance-val" class="skill-val container"></div>
-                    <button id="athletics-sel" class="skill-select"></button>
-                </div>
-                <div class="skill-badge container">
-                    <img src="../images/icons/Skills Icons/gambling.png" alt="" class="skill-icon">
-                    <h3>GAMBLING</h3>
-                    <div id="gambling-val" class="skill-val container"></div>
-                    <button id="athletics-sel" class="skill-select"></button>
-                </div>
-                <div class="skill-badge container">
-                    <img src="../images/icons/Skills Icons/handiness.png" alt="" class="skill-icon">
-                    <h3>HANDINESS</h3>
-                    <div id="handiness-val" class="skill-val container"></div>
-                    <button id="athletics-sel" class="skill-select"></button>
-                </div>
-                <div class="skill-badge container">
-                    <img src="../images/icons/Skills Icons/Insight.png" alt="" class="skill-icon">
-                    <h3>INSIGHT</h3>
-                    <div id="insight-val" class="skill-val container"></div>
-                    <button id="athletics-sel" class="skill-select"></button>
-                </div>
-                <div class="skill-badge container">
-                    <img src="../images/icons/Skills Icons/sahdiness.png" alt="" class="skill-icon">
-                    <h3>SHADINESS</h3>
-                    <div id="shadiness-val" class="skill-val container"></div>
-                    <button id="athletics-sel" class="skill-select"></button>
-                </div>
-                <div class="skill-badge container">
-                    <img src="../images/icons/Skills Icons/art.png" alt="" class="skill-icon">
-                    <h3>ART</h3>
-                    <div id="art-val" class="skill-val container"></div>
-                    <button id="athletics-sel" class="skill-select"></button>
-                </div>
-                <div class="skill-badge container">
-                    <img src="../images/icons/Skills Icons/cooking.png" alt="" class="skill-icon">
-                    <h3>COOKING</h3>
-                    <div id="cooking-val" class="skill-val container"></div>
-                    <button id="athletics-sel" class="skill-select"></button>
-                </div>
-                <div class="skill-badge container">
-                    <img src="../images/icons/Skills Icons/music.png" alt="" class="skill-icon">
-                    <h3>MUSIC</h3>
-                    <div id="music-val" class="skill-val container"></div>
-                    <button id="athletics-sel" class="skill-select"></button>
-                </div>
-                <div class="skill-badge container">
-                    <img src="../images/icons/Skills Icons/nature.png" alt="" class="skill-icon">
-                    <h3>NATURE</h3>
-                    <div id="nature-val" class="skill-val container"></div>
-                    <button id="athletics-sel" class="skill-select"></button>
-                </div>
-                <div class="skill-badge container">
-                    <img src="../images/icons/Skills Icons/survival.png" alt="" class="skill-icon">
-                    <h3>SURVIVAL</h3>
-                    <div id="survival-val" class="skill-val container"></div>
-                    <button id="athletics-sel" class="skill-select"></button>
-                </div>
-                <div class="skill-badge container">
-                    <img src="../images/icons/Skills Icons/barter.png" alt="" class="skill-icon">
-                    <h3>BARTER</h3>
-                    <div id="barter-val" class="skill-val container"></div>
-                    <button id="athletics-sel" class="skill-select"></button>
-                </div>
-                <div class="skill-badge container">
-                    <img src="../images/icons/Skills Icons/comedy.png" alt="" class="skill-icon">
-                    <h3>COMEDY</h3>
-                    <div id="comedy-val" class="skill-val container"></div>
-                    <button id="athletics-sel" class="skill-select"></button>
-                </div>
-                <div class="skill-badge container">
-                    <img src="../images/icons/Skills Icons/lying.png" alt="" class="skill-icon">
-                    <h3>LYING</h3>
-                    <div id="lying-val" class="skill-val container"></div>
-                    <button id="athletics-sel" class="skill-select"></button>
-                </div>
-                <div class="skill-badge container">
-                    <img src="../images/icons/Skills Icons/performer.png" alt="" class="skill-icon">
-                    <h3>PERFORMER</h3>
-                    <div id="performer-val" class="skill-val container"></div>
-                    <button id="athletics-sel" class="skill-select"></button>
-                </div>
-                <div class="skill-badge container">
-                    <img src="../images/icons/Skills Icons/seduction.png" alt="" class="skill-icon">
-                    <h3>SEDUCTION</h3>
-                    <div id="seduction-val" class="skill-val container"></div>
-                    <button id="athletics-sel" class="skill-select"></button>
-                </div>
-                <div class="skill-badge container">
-                    <img src="../images/icons/Skills Icons/history.png" alt="" class="skill-icon">
-                    <h3>HISTORY</h3>
-                    <div id="history-val" class="skill-val container"></div>
-                    <button id="athletics-sel" class="skill-select"></button>
-                </div>
-                <div class="skill-badge container">
-                    <img src="../images/icons/Skills Icons/math.png" alt="" class="skill-icon">
-                    <h3>MATH</h3>
-                    <div id="math-val" class="skill-val container"></div>
-                    <button id="athletics-sel" class="skill-select"></button>
-                </div>
-                <div class="skill-badge container">
-                    <img src="../images/icons/Skills Icons/medicine.png" alt="" class="skill-icon">
-                    <h3>MEDICINE</h3>
-                    <div id="medicine-val" class="skill-val container"></div>
-                    <button id="athletics-sel" class="skill-select"></button>
-                </div>
-                <div class="skill-badge container">
-                    <img src="../images/icons/Skills Icons/science.png" alt="" class="skill-icon">
-                    <h3>SCIENCE</h3>
-                    <div id="science-val" class="skill-val container"></div>
-                    <button id="athletics-sel" class="skill-select"></button>
-                </div>
-                <div class="skill-badge container">
-                    <img src="../images/icons/Skills Icons/tech.png" alt="" class="skill-icon">
-                    <h3>TECH</h3>
-                    <div id="tech-val" class="skill-val container"></div>
-                    <button id="athletics-sel" class="skill-select"></button>
-                </div>
-            </div>
+        <div id="character-contain" class="container">
+
+        </div>
+        <div id="bg-container">
+
         </div>
     </main>
     <script src="../src/characterCreate.js"></script>

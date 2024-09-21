@@ -1,12 +1,5 @@
-body {
-    background: linear-gradient(217deg, #03b3ff, rgba(255,0,0,0) 50%),
-                linear-gradient(127deg, #ffd503, rgba(0,255,0,0) 50%),
-                linear-gradient(336deg, #ff035b, rgba(0,0,255,0) 50%);
-}
-
 main {
     flex-direction: column;
-    height: 90%;
 }
 
 h1 {

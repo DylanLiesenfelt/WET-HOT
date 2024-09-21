@@ -1,88 +1,80 @@
-let attribute_points = 15;
-let skill_points = 5;
-const ATT_POINTS_ELEMENT = document.getElementById('att-count')
-const SKILL_POINTS_ELEMENT = document.getElementById('skill-count')
+/* ===== GLOBALS ===== */
+// Counts
+let att_count = 20
+let skill_count = 5
 
-function update_values() {
-    ATT_POINTS_ELEMENT.textContent = attribute_points
-    SKILL_POINTS_ELEMENT.textContent = skill_points
-}
-update_values();
+//HTML Constants
+const ATT_COUNT = document.getElementById('att-count')
+const SKILL_COUNT = document.getElementById('skill-count')
 
+/* ===== CLASSES ===== */
 class Attribute {
-    constructor(val_id, id_plus, id_minus) {
-        this.value = 0;
-        this.val_id = val_id;
-        this.id_plus = id_plus;
-        this.id_minus = id_minus;
-        this.val_id.textContent = this.value;
-
-        this.id_plus.addEventListener('click', () => {
-            if (attribute_points > 0) {
-                this.value ++
-                attribute_points --
-                this.val_id.textContent = this.value;
-                update_values()
-            }
-        })
-
-        this.id_minus.addEventListener('click', () => {
-            if (this.value > 0) {
-                this.value--;
-                attribute_points++;
-                this.val_id.textContent = this.value;
-                update_values();
-            }
-        })
+    constructor(att, icon) {
+        this.att = att
+        this.icon =  icon
+        this.value = 0
     }
-}
-
-const Swole = new Attribute(
-    document.getElementById('swole-val'),
-    document.getElementById('swole+'),
-    document.getElementById('swole-')
-)
-const Hustle = new Attribute(
-    document.getElementById('hustle-val'),
-    document.getElementById('hustle+'),
-    document.getElementById('hustle-')
-)
-const Vibes = new Attribute(
-    document.getElementById('vibes-val'),
-    document.getElementById('vibes+'),
-    document.getElementById('vibes-')
-)
-const Rizz = new Attribute(
-    document.getElementById('rizz-val'),
-    document.getElementById('rizz+'),
-    document.getElementById('rizz-')
-)
-const Smarts = new Attribute(
-    document.getElementById('smarts-val'),
-    document.getElementById('smarts+'),
-    document.getElementById('smarts-')
-)
-
-function calc_skill_value(main, mod, mod_val) {
-    calc = Math.ceil(main * (mod * mod_val))
-    console.log(calc)
-    return calc
 }
 
 class Skill {
-    constructor(val_id, select_id, calculation) {
-        this.val_id = val_id;
-        this.select_id = select_id;
-        this.bonus_flag = false;
-        this.calculation = calculation;
-        this.value = this.calculation;
-        this.val_id.textContent = this.value
+    constructor(skill, icon, main, mod, mod_val) {
+        this.skill = skill
+        this.icon = icon
+        this.main = main
+        this.mod = mod
+        this.mod_val = mod_val
+        this.value = main * (mod * mod_val)
+        this.flag = false
     }
 }
 
+class Character {
+    constructor(name, portrait, swole, hustle, vibes, rizz, smarts, athl, intim,
+    mma, labor, explo, finance, gamble, handy, insight, shady, art, cook, music,
+    nature, survive, barter, comedy, lying, perform, seduce, history, math, med, sci) {
+        this.name = name
+        this.portrait = portrait
+        this.level = 1
+        this.exp = 0
+        this.swole = swole
+        this.hustle = hustle
+        this.vibes = vibes
+        this.rizz = rizz
+        this.smarts = smarts
+        this.athl = athl
+        this.intim = intim
+        this.mma = mma
+        this.labor = labor
+        this.explo = explo
+        this.finance = finance
+        this.gamble = gamble
+        this.handy = handy
+        this.insight = insight
+        this.shady = shady
+        this.art = art
+        this.cook = cook
+        this.music = music
+        this.nature = nature
+        this.survive = survive
+        this.barter = barter
+        this.comedy = comedy
+        this.lying = lying
+        this.perform = perform
+        this.seduce = seduce
+        this.history = history
+        this.math = math
+        this.med = med
+        this.sci = sci
+    }
+}
+/* ===== FUNCTIONS ===== */
+function update_counts() {
+    ATT_COUNT.textContent = att_count
+    SKILL_COUNT.textContent = skill_count
+}
 
-const Athletics = new Skill(
-    document.getElementById('athletics-val'),
-    document.getElementById('athletics-sel'),
-    calc_skill_value(Swole.value, Hustle.value, 0.3)
-)
+/* ===== RUN ===== */
+update_counts()
+
+
+
