@@ -4,6 +4,11 @@
 ### 0.0.1: UI
 - Build intro screen
 - Build character creation screen <====
+    - Attributes
+    - Skills
+    - Backgrounds (effect skills and attributes )
+        - Player Age (min 18)
+        - Player Name
 - Build initial game scene
 - Add functionality to all screens
 
